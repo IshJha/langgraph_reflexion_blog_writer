@@ -16,7 +16,7 @@ dotenv
 
 **Installation**
 Clone the repository:
-git clone https://github.com/yourusername/conditional-tool-execution-bot.git
+git clone https://github.com/IshJha/langgraph_reflexion_blog_writer.git
 cd conditional-tool-execution-bot
 
 **Install the required packages using Pipenv:**
