@@ -48,18 +48,6 @@ Iterative Revisions: The response is iteratively revised based on the output of 
 Integration with Groq
 This project integrates with the Groq API to leverage various large language models, such as Gemma2-9b-It and others, to generate responses and revise them using structured prompts.
 
-**Example**
-To generate a response about "India" using the bot, the following code is executed:
-
-human_message = HumanMessage(content="Write about India.")
-chain = (
-    first_responder_prompt_template
-    | llm.bind_tools(tools=[AnswerQuestion], tool_choice="AnswerQuestion")
-    | parser_pydantic
-)
-
-res = chain.invoke(input={"messages": [human_message]})
-print(res)
 
 **Author: Ish Jha
 Contact Info: ishjha1929@gmail.com / jha.13@alumni.iitj.ac.in
